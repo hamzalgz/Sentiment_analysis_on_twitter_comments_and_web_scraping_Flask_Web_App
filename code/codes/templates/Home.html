@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/static/css/style.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+          .navbar-inverse {
+            background-color: #050505;
+            border: none;
+            
+          }
+        </style>
+    </head>
+    <body class="image">
+        <nav class="navbar navbar-inverse" >
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#">Twitter Sentiment Analysis</a>
+              </div>
+              <ul class="nav navbar-nav" >
+                <li class="active"><a href="#" >Home</a></li>
+                <li><a href="/About">About</a></li>
+              </ul>
+             
+            </div>
+        </nav>
+
+        <div style=" display: table; position: absolute; height: 100%; width: 100%;">
+          <div style="display: table-cell; vertical-align: middle;">
+              <div style="margin: 0 auto;
+                          width: 1000px;
+                          height: 120px;
+                          ">
+                          <h1 style="color: rgb(11, 40, 119); height: 80px; margin-left: 500px;">Welcome</h1>
+                          <form class="form-horizontal" method="POST">
+                              
+                              <div class="form-group">
+                                <label class="control-label col-sm-4" for="url">Saisir votre URL Twitter :</label>
+                                <div class="col-sm-6">
+                                  <input type="url" name='keys' class="form-control" id="url" placeholder="Enter URL..." required>
+                                </div>
+                                <div class="col-sm-2">
+                                  <button type="submit" class="btn btn-default"><a href="/Dashboard/" >Submit</a></button>
+                                </div>
+                              </div>
+                              
+                          </form>
+              </div>
+          </div>
+      </div>
+    
+    </body>
+</html>
